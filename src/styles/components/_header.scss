@@ -1,0 +1,22 @@
+.header {
+  padding: 0.8rem 0;
+  margin-bottom: 2.6rem;
+
+  & img {
+    border-style: none;
+    max-height: 4.3rem;
+    margin: auto 0;
+  }
+}
+
+.header_title {
+  color: #8c8987;
+  font-size: 3.2rem;
+  margin: auto;
+}
+
+.container-header {
+  display: flex;
+}
+
+// Add media query for breakpoints

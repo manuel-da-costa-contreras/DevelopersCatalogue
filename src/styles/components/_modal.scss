@@ -1,0 +1,74 @@
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-shrink.MuiFormLabel-filled {
+  font-size: $s-size;
+}
+
+.MuiInputBase-input.MuiInput-input {
+  font-size: $m-size;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: $off-grey-shadow;
+  color: $pure-white;
+  max-width: 46rem;
+  outline: none;
+  padding: $s-size;
+  text-align: left;
+  display: flex;
+}
+
+.form-class {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 15rem 30rem;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'imgTag formFields'
+    '. buttonFields';
+}
+
+.img-tag {
+  grid-area: imgTag;
+  margin: auto 0;
+}
+.form-fields {
+  grid-area: formFields;
+}
+
+.form-buttons {
+  margin: 0 auto;
+  grid-area: buttonFields;
+  & > button {
+    margin-left: $s-size;
+  }
+}
+
+.modal__body {
+  font-size: 2rem;
+  margin: 0 0 $l-size 0;
+  word-break: break-all;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .modal {
+    max-width: 70rem;
+    padding: $l-size;
+  }
+}

@@ -1,0 +1,11 @@
+.button-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .button-container {
+    flex-direction: row;
+  }
+} ;
